@@ -5,7 +5,7 @@
  * Plugin Name:       Primary ICT Support - Sub Pages
  * Plugin URI:        www.primaryictsupport.co.uk
  * Description:       PICTS Plugin to display all sub pages using shortcode [picts_childpages]
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            John Emmett
  * Author URI:        www.primaryictsupport.co.uk
  * License:           GPL-2.0+
@@ -59,7 +59,7 @@ function picts_subpages_scripts_loader() {
 	wp_enqueue_style('dashicons');
 	
 	// 2. Scripts.
-	wp_enqueue_script( 'mainjs', plugin_dir_url( __FILE__ ) . 'inc/js/picts-subpages.js');
+	wp_enqueue_script( 'mainjs', plugin_dir_url( __FILE__ ) . 'inc/js/picts-subpages.js', 999);
 
 
 }
