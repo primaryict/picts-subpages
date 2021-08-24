@@ -77,11 +77,16 @@ function register_menus() {
 }
 add_action('init', 'register_menus');
 
+
 /**
  * Loading Classes.
-**/
+ **/
 
-$picts_updater = PICTS_SUBPAGES_PLUGIN_DIR . '/inc/updater/picts-updater.php';
-if ( is_readable( $picts_updater ) ) {
-    require_once $picts_updater;
+// GIT HUB Updater
+if( ! class_exists( 'Picts_Updater' ) ){
+    include_once( plugin_dir_path( __FILE__ ) . '/inc/updater/updater.php' );
 }
+$updater = new Picts_Updater( __FILE__ );
+$updater->set_username( 'primaryict' );
+$updater->set_repository( 'picts-subpages' );
+$updater->initialize();
