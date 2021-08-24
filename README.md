@@ -1,9 +1,11 @@
 # picts-subpages
 Showing a list of subpages using shortcodes 
 
-### Version 1.0.3
+### Version 1.0.4
+- Updated version number to correct version
+- 
+- ### Version 1.0.3
 - Using correct class fucntions for the udpater
-
 
 ### Version 1.0.1
 - Added up
