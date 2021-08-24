@@ -1,8 +1,11 @@
 # picts-subpages
 Showing a list of subpages using shortcodes 
 
+### Version 1.0.3
+- Using correct class fucntions for the udpater
 
-# Version 1.0.1
+
+### Version 1.0.1
 - Added up
 1. Install the plugin via wordpress.
 2. Use the shortcode [picts_childpages] where you would like to display sub pages.
